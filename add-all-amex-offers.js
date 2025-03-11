@@ -1,0 +1,1 @@
+javascript:btns=[...document.querySelectorAll('.offer-cta')].filter(b => b.textContent === 'Add to Card');c=()=>{ b = btns.pop(); if (!b) return console.log('added all!'); b.click(); setTimeout(c, Math.random() * 1500 + 300) };c();
